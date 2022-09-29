@@ -1,0 +1,137 @@
+>>>>> Java connector logging started 08/01/2014 at 13:54:17.715 GMT
+
+CODEBASE                : cm85 321_850000     Thu Oct 10 11:59:25 PDT 2013 
+OS version              : Windows Server 2008 R2 6.1 build 7601 Service Pack 1
+java.vm                 : IBM Corporation, IBM J9 VM, version 1.6.0
+java.home               : E:\Program Files\ibm\SDP\jdk\jre
+sun.boot.class.path     : E:\Program Files\ibm\SDP\jdk\jre\lib\endorsed\jaxws-api.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\endorsed\jaxb-api.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\endorsed\javax.j2ee.annotation.jar;E:\Program Files\ibm\SDP\jdk\jre\bin\default\jclSC160\vm.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\annotation.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\beans.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\java.util.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\jndi.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\logging.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\security.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\sql.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmorb.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmorbapi.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmcfw.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\rt.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\charsets.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\resources.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmpkcs.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmcertpathfw.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmjgssfw.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmjssefw.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmsaslfw.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmjcefw.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmjgssprovider.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmjsseprovider2.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmcertpathprovider.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\management-agent.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\xml.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\jlm.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\javascript.jar
+java.ext.dir            : null
+java.classpath          : C:\Users\Administrator\IBM\rationalsdp\workspace\ExportImportICM\bin;C:\Program Files\IBM\db2cmv8\lib\cmbsdk81.jar
+sun.boot.library.path   : E:\Program Files\ibm\SDP\jdk\jre\bin\default;E:\Program Files\ibm\SDP\jdk\jre\bin
+java.library.path       : E:\Program Files\ibm\SDP\jdk\jre\bin\default;E:\Program Files\ibm\SDP\jdk\jre\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Java\jdk1.8.0_05\bin;C:\Program Files (x86)\IBM\db2cmv8\Client\;C:\Windows\system32;C:\Windows;C:\Windows\system32\wbem;C:\Windows\system32\windowspowershell\v1.0\;c:\program files\ibm\gsk8\lib64;c:\program files (x86)\ibm\gsk8\lib;C:\PROGRA~1\IBM\SQLLIB\BIN;C:\PROGRA~1\IBM\SQLLIB\FUNCTION;C:\PROGRA~1\IBM\SQLLIB\SAMPLES\REPL;C:\Program Files\IBM\db2cmv8\inso;C:\Program Files\IBM\db2cmv8;C:\Program Files\IBM\db2cmv8\bin;C:\Program Files\IBM\db2cmv8\dll;C:\Program Files\Java\jre7\bin;C:\IBM\WebSphere\AppServer\java\bin;C:\Program Files\IBM\db2cmv8\icc64\lib64;.
+java.io.tmpdir          : C:\Users\jli\AppData\Local\Temp\
+sun.io.unicode.encoding : UnicodeLittle
+user.language           : en
+user.timezone           : America/New_York
+user.dir                : C:\Users\Administrator\IBM\rationalsdp\workspace\ExportImportICM
+user.name                : jli
+Log Config              : ?ibmcmconfig.properties
+
+[ WARN] cmblogconfig.properties (the log configuration file) can not be found or an error was encountered while it was being read. (?ibmcmconfig.properties)
+
+[WARN] The log will be written to the file dklog.log in the current directory: C:\Users\Administrator\IBM\rationalsdp\workspace\ExportImportICM
+
+
+***** Content Manager Jar File and Version Information *****
+ Content Manager Jar File: C:\Program Files\IBM\db2cmv8\lib\cmbsdk81.jar version: 8.5.0.000
+************************************************************
+
+[EXC]: 08/01/2014 at 13:54:17.918 GMT @ JLCM2008 (192.168.163.135); com.ibm.mm.sdk.common.DKUsageError # com.ibm.mm.sdk.logtool.DKLogManagerFactory_default
+[USR]: jli (C:\Users\jli) @ C:\Users\Administrator\IBM\rationalsdp\workspace\ExportImportICM
+[THD]: main ( 64796479 )
+[THG]: main = { Attach API wait loop, Signal Dispatcher, main }
+[LOC]: com.ibm.mm.sdk.server.DKDatastoreICM:listDataSources
+[MSG]: DGL7336A: Using the FileReader class, the Content Manager cmbicmsrvs.ini file was not found. The detail error message is: cmbicmsrvs.ini (The system cannot find the file specified.)
+	at com.ibm.mm.sdk.server.DKDatastoreICM.listDataSources(DKDatastoreICM.java:8336)
+	at com.ibm.mm.sdk.server.DKDatastoreICM.getServerDef(DKDatastoreICM.java:13201)
+	at com.ibm.mm.sdk.server.DKDatastoreICM.connect(DKDatastoreICM.java:2728)
+	at SConnectDisconnectICM.main(SConnectDisconnectICM.java:261)
+
+
+
+[EXC]: 08/01/2014 at 13:54:18.058 GMT @ JLCM2008 (192.168.163.135); com.ibm.mm.sdk.common.DKUsageError # com.ibm.mm.sdk.logtool.DKLogManagerFactory_default
+[USR]: jli (C:\Users\jli) @ C:\Users\Administrator\IBM\rationalsdp\workspace\ExportImportICM
+[THD]: main ( 64796479 )
+[THG]: main = { Attach API wait loop, Signal Dispatcher, main }
+[LOC]: com.ibm.mm.sdk.server.DKDatastoreICM:connect
+[MSG]: DGL7332A: Library server representation type was not found. Please make sure that a valid library server and representation type has been specified in the cmbicmsrvs.ini file or to the Content Manager connector. : icmnlsdb
+	at com.ibm.mm.sdk.server.DKDatastoreICM.connect(DKDatastoreICM.java:3090)
+	at SConnectDisconnectICM.main(SConnectDisconnectICM.java:261)
+
+
+
+[ERR]: 08/01/2014 at 13:54:18.058 GMT @ JLCM2008 (192.168.163.135);  # com.ibm.mm.sdk.server.DKDatastoreICM
+[USR]: jli (C:\Users\jli) @ C:\Users\Administrator\IBM\rationalsdp\workspace\ExportImportICM
+[THD]: main ( 64796479 )
+[THG]: main = { Attach API wait loop, Signal Dispatcher, main }
+[LOC]: com.ibm.mm.sdk.server.DKDatastoreICM:connect
+[MSG]: ?--?-    ERROR:  The connect() operation has failed.  Before exiting the DKDatastoreICM.connect() operation, state changes will be rolled back.  Error caught: "DGL7332A: Library server representation type was not found. Please make sure that a valid library server and representation type has been specified in the cmbicmsrvs.ini file or to the Content Manager connector. : icmnlsdb"
+
+
+[ERR]: 08/01/2014 at 13:54:18.105 GMT @ JLCM2008 (192.168.163.135);  # com.ibm.mm.sdk.server.DKDatastoreICM
+[USR]: jli (C:\Users\jli) @ C:\Users\Administrator\IBM\rationalsdp\workspace\ExportImportICM
+[THD]: main ( 64796479 )
+[THG]: main = { Attach API wait loop, Signal Dispatcher, main }
+[LOC]: com.ibm.mm.sdk.server.DKDatastoreICM:connect
+[MSG]: ?--?-com.ibm.mm.sdk.common.DKUsageError: DGL7332A: Library server representation type was not found. Please make sure that a valid library server and representation type has been specified in the cmbicmsrvs.ini file or to the Content Manager connector. : icmnlsdb
+	at com.ibm.mm.sdk.server.DKDatastoreICM.connect(DKDatastoreICM.java:3090)
+	at SConnectDisconnectICM.main(SConnectDisconnectICM.java:261)
+
+
+>>>>> Java connector logging started 08/01/2014 at 13:56:07.274 GMT
+
+CODEBASE                : cm85 321_850000     Thu Oct 10 11:59:25 PDT 2013 
+OS version              : Windows Server 2008 R2 6.1 build 7601 Service Pack 1
+java.vm                 : IBM Corporation, IBM J9 VM, version 1.6.0
+java.home               : E:\Program Files\ibm\SDP\jdk\jre
+sun.boot.class.path     : E:\Program Files\ibm\SDP\jdk\jre\lib\endorsed\jaxws-api.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\endorsed\jaxb-api.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\endorsed\javax.j2ee.annotation.jar;E:\Program Files\ibm\SDP\jdk\jre\bin\default\jclSC160\vm.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\annotation.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\beans.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\java.util.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\jndi.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\logging.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\security.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\sql.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmorb.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmorbapi.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmcfw.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\rt.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\charsets.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\resources.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmpkcs.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmcertpathfw.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmjgssfw.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmjssefw.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmsaslfw.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmjcefw.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmjgssprovider.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmjsseprovider2.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmcertpathprovider.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\management-agent.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\xml.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\jlm.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\javascript.jar
+java.ext.dir            : null
+java.classpath          : C:\Users\Administrator\IBM\rationalsdp\workspace\ExportImportICM\bin;C:\Program Files\IBM\db2cmv8\lib\cmbsdk81.jar;C:\Program Files\IBM\SQLLIB\java\db2java.zip;C:\Program Files\IBM\SQLLIB\java\db2jcc.jar;C:\Program Files\IBM\SQLLIB\java\db2jcc_license_cu.jar;C:\Program Files\IBM\SQLLIB\java\db2jcc4.jar
+sun.boot.library.path   : E:\Program Files\ibm\SDP\jdk\jre\bin\default;E:\Program Files\ibm\SDP\jdk\jre\bin
+java.library.path       : E:\Program Files\ibm\SDP\jdk\jre\bin\default;E:\Program Files\ibm\SDP\jdk\jre\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Java\jdk1.8.0_05\bin;C:\Program Files (x86)\IBM\db2cmv8\Client\;C:\Windows\system32;C:\Windows;C:\Windows\system32\wbem;C:\Windows\system32\windowspowershell\v1.0\;c:\program files\ibm\gsk8\lib64;c:\program files (x86)\ibm\gsk8\lib;C:\PROGRA~1\IBM\SQLLIB\BIN;C:\PROGRA~1\IBM\SQLLIB\FUNCTION;C:\PROGRA~1\IBM\SQLLIB\SAMPLES\REPL;C:\Program Files\IBM\db2cmv8\inso;C:\Program Files\IBM\db2cmv8;C:\Program Files\IBM\db2cmv8\bin;C:\Program Files\IBM\db2cmv8\dll;C:\Program Files\Java\jre7\bin;C:\IBM\WebSphere\AppServer\java\bin;C:\Program Files\IBM\db2cmv8\icc64\lib64;.
+java.io.tmpdir          : C:\Users\jli\AppData\Local\Temp\
+sun.io.unicode.encoding : UnicodeLittle
+user.language           : en
+user.timezone           : America/New_York
+user.dir                : C:\Users\Administrator\IBM\rationalsdp\workspace\ExportImportICM
+user.name                : jli
+Log Config              : ?ibmcmconfig.properties
+
+[ WARN] cmblogconfig.properties (the log configuration file) can not be found or an error was encountered while it was being read. (?ibmcmconfig.properties)
+
+[WARN] The log will be written to the file dklog.log in the current directory: C:\Users\Administrator\IBM\rationalsdp\workspace\ExportImportICM
+
+
+***** Content Manager Jar File and Version Information *****
+ Content Manager Jar File: C:\Program Files\IBM\db2cmv8\lib\cmbsdk81.jar version: 8.5.0.000
+************************************************************
+>>>>> Java connector logging started 08/01/2014 at 14:06:43.209 GMT
+
+CODEBASE                : cm85 321_850000     Thu Oct 10 11:59:25 PDT 2013 
+OS version              : Windows Server 2008 R2 6.1 build 7601 Service Pack 1
+java.vm                 : IBM Corporation, IBM J9 VM, version 1.6.0
+java.home               : E:\Program Files\ibm\SDP\jdk\jre
+sun.boot.class.path     : E:\Program Files\ibm\SDP\jdk\jre\lib\endorsed\jaxws-api.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\endorsed\jaxb-api.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\endorsed\javax.j2ee.annotation.jar;E:\Program Files\ibm\SDP\jdk\jre\bin\default\jclSC160\vm.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\annotation.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\beans.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\java.util.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\jndi.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\logging.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\security.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\sql.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmorb.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmorbapi.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmcfw.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\rt.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\charsets.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\resources.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmpkcs.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmcertpathfw.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmjgssfw.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmjssefw.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmsaslfw.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmjcefw.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmjgssprovider.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmjsseprovider2.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\ibmcertpathprovider.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\management-agent.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\xml.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\jlm.jar;E:\Program Files\ibm\SDP\jdk\jre\lib\javascript.jar
+java.ext.dir            : null
+java.classpath          : C:\Users\Administrator\IBM\rationalsdp\workspace\ExportImportICM\bin;C:\Program Files\IBM\db2cmv8\lib\cmbsdk81.jar;C:\Program Files\IBM\SQLLIB\java\db2java.zip;C:\Program Files\IBM\SQLLIB\java\db2jcc.jar;C:\Program Files\IBM\SQLLIB\java\db2jcc_license_cu.jar;C:\Program Files\IBM\SQLLIB\java\db2jcc4.jar
+sun.boot.library.path   : E:\Program Files\ibm\SDP\jdk\jre\bin\default;E:\Program Files\ibm\SDP\jdk\jre\bin
+java.library.path       : E:\Program Files\ibm\SDP\jdk\jre\bin\default;E:\Program Files\ibm\SDP\jdk\jre\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Java\jdk1.8.0_05\bin;C:\Program Files (x86)\IBM\db2cmv8\Client\;C:\Windows\system32;C:\Windows;C:\Windows\system32\wbem;C:\Windows\system32\windowspowershell\v1.0\;c:\program files\ibm\gsk8\lib64;c:\program files (x86)\ibm\gsk8\lib;C:\PROGRA~1\IBM\SQLLIB\BIN;C:\PROGRA~1\IBM\SQLLIB\FUNCTION;C:\PROGRA~1\IBM\SQLLIB\SAMPLES\REPL;C:\Program Files\IBM\db2cmv8\inso;C:\Program Files\IBM\db2cmv8;C:\Program Files\IBM\db2cmv8\bin;C:\Program Files\IBM\db2cmv8\dll;C:\Program Files\Java\jre7\bin;C:\IBM\WebSphere\AppServer\java\bin;C:\Program Files\IBM\db2cmv8\icc64\lib64;.
+java.io.tmpdir          : C:\Users\jli\AppData\Local\Temp\
+sun.io.unicode.encoding : UnicodeLittle
+user.language           : en
+user.timezone           : America/New_York
+user.dir                : C:\Users\Administrator\IBM\rationalsdp\workspace\ExportImportICM
+user.name                : jli
+Log Config              : ?ibmcmconfig.properties
+
+[ WARN] cmblogconfig.properties (the log configuration file) can not be found or an error was encountered while it was being read. (?ibmcmconfig.properties)
+
+[WARN] The log will be written to the file dklog.log in the current directory: C:\Users\Administrator\IBM\rationalsdp\workspace\ExportImportICM
+
+
+***** Content Manager Jar File and Version Information *****
+ Content Manager Jar File: C:\Program Files\IBM\db2cmv8\lib\cmbsdk81.jar version: 8.5.0.000
+************************************************************
+
+[EXC]: 08/01/2014 at 14:08:09.867 GMT @ JLCM2008 (192.168.163.135); com.ibm.mm.sdk.common.DKUsageError # com.ibm.mm.sdk.logtool.DKLogManagerFactory_default
+[USR]: jli (C:\Users\jli) @ C:\Users\Administrator\IBM\rationalsdp\workspace\ExportImportICM
+[THD]: main ( 64796479 )
+[THG]: main = { Attach API wait loop, Signal Dispatcher, main }
+[LOC]: com.ibm.mm.sdk.server.DKDatastoreICM:checkEntityTypeDef
+[MSG]: DGL0400A: Invalid object type : S_withChild
+	at com.ibm.mm.sdk.server.DKDatastoreICM.checkEntityTypeDef(DKDatastoreICM.java:10845)
+	at com.ibm.mm.sdk.server.DKDatastoreICM.createDDO(DKDatastoreICM.java:9155)
+	at SItemCreationICM.createSimpleItemWithChildren(SItemCreationICM.java:664)
+	at SItemRetrievalICM.main(SItemRetrievalICM.java:425)
+
+

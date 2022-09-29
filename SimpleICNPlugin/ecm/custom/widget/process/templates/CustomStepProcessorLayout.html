@@ -1,0 +1,65 @@
+<div>
+	<div data-dojo-type="dijit.layout.ContentPane" data-dojo-attach-point="stepSummary" region="top" class="ecmStepTabContainer">
+        <label for="${id}_subjectText" style="display: none;">${_messages.process_info_subject}:</label>
+	    <div id="${id}_subjectText" data-dojo-attach-point="subjectText" class="ecmProcessSubjectLabel">&nbsp;
+	    </div>
+	    <div data-dojo-attach-point="systemInfo" class="ecmProcessSystemInformation">
+	        <div class="ecmProcessSystemLabel">${_messages.process_deadline}</div>
+	        <div data-dojo-attach-point="deadline" class="ecmProcessSystemField"></div>
+	        <div class="ecmProcessSystemLabel">${_messages.process_launchedby}</div>
+	        <div data-dojo-attach-point="launchedby" class="ecmProcessSystemField"></div>
+	        <div class="ecmProcessSystemLabel">${_messages.process_receivedon}</div>
+	        <div data-dojo-attach-point="receivedOn" class="ecmProcessSystemField"></div>
+	        <div class="ecmProcessSystemLabel">${_messages.process_step}</div>
+	        <div data-dojo-attach-point="stepName" class="ecmProcessSystemFieldEnd"></div>
+	    </div>
+	    <div data-dojo-attach-point="instructions" class="ecmProcessInstructions">
+	         <textarea data-dojo-type="dijit.form.SimpleTextarea" readonly rows=3 cols=100 wrap="soft" class="ecmProcessInstructionsText" data-dojo-attach-point="instructionsText"  ></textarea>
+	    	<span  data-dojo-type="dijit.form.Button" class="ecmProcessInstructionsLink" data-dojo-attach-event="onClick:_showInstructions" data-dojo-attach-point="showInstructions" baseClass="buttonLinks">${_messages.process_hide_instructions}</span>
+	    </div>
+	</div>
+	<!-- Sample: modify the step processor presentation to make the step processor content the leading region in the content pane -->
+	<div data-dojo-type="dijit.layout.ContentPane" data-dojo-attach-point="stepContentPane" region="leading" splitter="true" style="width: 60%" >
+	    <div data-dojo-attach-point="viewTabContainer" data-dojo-type="dijit.layout.TabContainer" region="center" class="ecmStepTabContainer ecmStepTabContainerBorder">
+            <div data-dojo-attach-point="propertiesContainer" 
+	             data-dojo-type="dijit.layout.ContentPane" 
+	             region="center"
+	             title="${_messages.process_properties}">
+                <div data-dojo-attach-point="workItemPropertiesPane"
+                    data-dojo-type="ecm.widget.process.WorkItemPropertiesPane"
+                    region="center"
+                    class="centerPane">
+                </div>
+	        </div>
+	        <div data-dojo-attach-point="attachmentsContainer" 
+	             data-dojo-type="dijit.layout.ContentPane" 
+	             region="center"
+	             title="${_messages.process_attachments}">				
+	            <div data-dojo-attach-point="workItemAttachmentsPane"
+					 data-dojo-type="ecm.widget.process.WorkItemAttachmentsPane"
+	                 region="center"
+	                 class="centerPane">
+	            </div>
+	        </div>
+            <div data-dojo-attach-point="historyContainer" 
+                 data-dojo-type="dijit.layout.ContentPane" 
+                 region="center"
+                 title="${_messages.process_tracker_history}">
+	            <div data-dojo-attach-point="workItemHistoryPane"
+	                data-dojo-type="ecm.widget.process.TrackerHistoryPane"
+	                region="center"
+	                class="centerPane">
+	            </div>	        
+            </div>
+	    </div>
+	</div>
+	<!-- Sample: add new content pane in the step processor presentation for the Content Viewer -->
+	<div data-dojo-attach-point="customViewerContainer" data-dojo-type="dijit.layout.ContentPane" region="center" style="width: 40%" >
+		<div id="contentViewer"	style="width: 100%; height: 100%">				
+	    </div>	
+	</div>
+	<div data-dojo-type="dijit.layout.ContentPane" region="bottom">
+	   <div class="dijitDialogPaneActionBar" data-dojo-attach-point="processorButtonBar"  data-dojo-type="ecm.widget.process.ProcessorButtonBar" data-dojo-attach-event="onSave: onSave, onCancel: onCancel">  
+	</div>
+</div>
+    
