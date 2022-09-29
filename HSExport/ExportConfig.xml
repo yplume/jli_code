@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+	<UpdateSleepTime>-1</UpdateSleepTime>
+	<DateRange>422</DateRange>
+	<UNCPath>c:\\test\\</UNCPath>
+	<InitRun>1</InitRun>
+	<CMServerName>c:\\test\\</CMServerName>
+	<CMUserName>icmadmin</CMUserName>
+	<CMPassword>BigBlue1</CMPassword>	
+	<ItemTypes>
+		<name>APU</name>
+		<name>APC</name>
+		<name>JE</name>
+		<name>JEC</name>
+	</ItemTypes>
+</Config>
