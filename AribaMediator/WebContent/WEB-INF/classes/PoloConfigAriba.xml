@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PoloConfigAriba>
+	<ReaderSleepTime>30</ReaderSleepTime>
+	<CMServerName>icmnlsdb</CMServerName>
+	<CMUserName>icmadmin</CMUserName>
+	<CMPassword>BigBlue1</CMPassword>
+	<MonitoredWorkList>test</MonitoredWorkList>
+	<OutPutPath>c:\\Test</OutPutPath>
+</PoloConfigAriba>
