@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="stylesheet" href="/RLReport/theme/blue.css" type="text/css">
+<!-- tpl:insert attribute="headarea" -->
+<!-- /tpl:insert -->
+<%-- tpl:insert attribute="headarea_1" --%><TITLE>Polo Report</TITLE><%-- /tpl:insert --%>
+</head>
+<body>
+<table width="760" cellspacing="0" cellpadding="0" border="0">
+   <tbody>
+      <tr>
+         <td valign="top">
+         <table class="header" cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tbody>
+               <tr>
+                  <td width="160"><IMG border="0" width="160"
+							height="50" alt="Company's LOGO"
+							src="/RLReport/theme/prllogo.jpg"></td>
+                  <td width="250" style="color: white; font-family:Times New Roman;font-size:large;"> Invoices Report</td>
+               </tr>
+            </tbody>
+         </table>
+         </td>
+      </tr>
+      <tr>
+         <td valign="top" class="nav_head" height="20"></td>
+      </tr>
+      <tr class="content-area">
+         <td style="padding:10px 10px 10px 150px;" valign="top">Select Item Type: <select name="itemtype"><option value="Gen_Invoices">Gen_Invoices</option><option value="SAP_Invoices">SAP_Invoices</option><option value="SAP_Ariba_Invoices">SAP_Ariba_Invoices</option></select></td>
+      </tr>
+	  <tr class="content-area">
+         <td style="padding:10px 10px 10px 150px" valign="top">Select Attribute: <select name="attribute"><option value="InvoicesNum">Invoice Number</option><option value="VendorNum">Vendor Number</option><option value="PONum">PO Number</option></select>&nbsp;<input type="text" name="attvalue"></td>
+      </tr>
+	  <tr class="content-area">
+         <td style="padding:10px 10px 10px 150px" valign="top">Select Item Type: <select><option value="Gen_Invoices">Gen_Invoices</option><option value="SAP_Invoices">SAP_Invoices</option><option value="SAP_Ariba_Invoices">SAP_Ariba_Invoices</option></select></td>
+      </tr>
+	  <tr class="content-area">
+         <td style="padding:10px 10px 10px 150px" valign="top">Upload Searching File:  <form action = "/ProcessInputFile" method = "post" enctype = "multipart/form-data">
+         <input type = "file" name = "file" size = "50" />
+         <br />
+         <input type = "submit" value = "Upload File" />
+      </form>
+	  </td>
+      </tr>
+	  
+	  <tr class="content-area">
+         <td style="padding:10px 10px 10px 150px"  valign="top"><!-- tpl:insert attribute="bodyarea" -->Search<!-- /tpl:insert --></td>
+      </tr>
+      <tr>
+         <td valign="top" height="20" class="footer"></td>
+      </tr>
+   </tbody>
+</table>
+</body>
+</html>
